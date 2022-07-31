@@ -1,0 +1,65 @@
+set sv_listingIPOverride "147.189.169.233" 
+## You CAN edit the following:
+endpoint_add_tcp "147.189.169.233:30100" # zap-hosting: do not modify!
+endpoint_add_udp "147.189.169.233:30100" # zap-hosting: do not modify!
+sv_maxclients 10
+set steam_webApiKey "none"
+sets tags "FedRP, FederalRP, Fed, RP, RolePlay"
+
+## You MAY edit the following:
+#sv_master1 "" 
+sv_licenseKey "cfxk_2LaGbl5Uxb6GFCeyhvTj_4d6wY7"
+sv_hostname "FedRP (FederalRP) Dev City"
+sets sv_projectName "FedRP :: FederalRP Los Santos Dev City, testing it all and breaking most of it"
+sets sv_projectDesc "yeah, a ton is broken and a bunch of it is weird, but its a dev server"
+sets locale "en-US" 
+load_server_icon myLogo.png
+set sv_enforceGameBuild 2545
+set mysql_connection_string "mysql://zap778405-2:aFS868iXyCJdbjfA@mysql-mariadb-27-104-lax.zap-hosting.com/zap778405-2?charset=utf8mb4"
+
+# Voice config
+setr voice_useNativeAudio true
+setr voice_useSendingRangeOnly true
+setr voice_defaultCycle "GRAVE"
+setr voice_defaultVolume 0.3
+setr voice_enableRadioAnim 1
+setr voice_syncData 1
+
+# QBCore locale config
+setr qb_locale "en"
+
+# QBCore UseTarget
+setr UseTarget true
+
+# These resources will start by default.
+ensure mapmanager
+ensure chat
+ensure spawnmanager
+ensure sessionmanager
+ensure basic-gamemode
+ensure hardcap
+ensure baseevents
+
+# QBCore & Extra stuff
+ensure qb-core
+ensure [qb]
+ensure [standalone]
+ensure [voice]
+ensure [defaultmaps]
+
+## Permissions ##
+add_ace group.admin command allow # allow all commands
+#add_principal identifier.{{principalMasterIdentifier}} qbcore.god <- doesn't exist yet, change the generated one below to qbcore.god
+# Deployer Note: this admin master has no identifiers to be automatically added.
+# add_principal identifier.discord.111111111111111111 group.admin #example
+
+# Resources
+add_ace resource.qb-core command allow # Allow qb-core to execute commands
+
+# Gods
+add_ace qbcore.god command allow # Allow all commands
+
+# Inheritance
+add_principal qbcore.god group.admin # Allow gods access to the main admin group used to get all default permissions
+add_principal qbcore.god qbcore.admin # Allow gods access to admin commands
+add_principal qbcore.admin qbcore.mod # Allow admins access to mod commands
