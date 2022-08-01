@@ -187,7 +187,7 @@ QBShared.Jobs = {
             },
 			['4'] = {
                 name = 'Manager',
-				isboss = true,
+								isboss = true,
                 payment = 150
             },
         },
@@ -209,7 +209,24 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
+                name = 'Paralegal',
+                payment = 50
+            },
+						['1'] = {
+                name = 'Jr. Associate',
+                payment = 50
+            },
+						['2'] = {
                 name = 'Associate',
+                payment = 50
+            },
+						['3'] = {
+                name = 'Sr. Associate',
+                payment = 50
+            },
+						['4'] = {
+                name = 'Partner',
+								isboss = true,
                 payment = 50
             },
         },
@@ -280,4 +297,54 @@ QBShared.Jobs = {
             },
         },
 	},
+	-- Addon Jobs (FedRP)
+	['PI'] = {
+		label = 'Investigator',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Office Worker',
+                payment = 50
+            },
+						['1'] = {
+                name = 'Investigator',
+                payment = 50
+            },
+						['2'] = {
+                name = 'Sr. Investigator',
+                payment = 50
+            },
+						['3'] = {
+                name = 'boss',
+								isbos = true,
+                payment = 50
+            },
+        },
+	},
+	['Uber'] = {
+		label = 'Uber',
+		defaultDuty = false,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = '1 Star Driver',
+                payment = 50
+            },
+						['1'] = {
+                name = '3 Star Driver',
+                payment = 50
+            },
+						['2'] = {
+                name = '5 Star Driver',
+                payment = 50
+            },
+						['3'] = {
+                name = 'Corporate',
+								isbos = true,
+                payment = 50
+            },
+        },
+	},
+
 }
