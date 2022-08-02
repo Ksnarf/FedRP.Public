@@ -1,8 +1,8 @@
 Config = {}
 
 -- What should the price of jerry cans be?
-Config.JerryCanCost = 100
-Config.RefillCost = 50 -- If it is missing half of it capacity, this amount will be divided in half, and so on.
+Config.JerryCanCost = 150
+Config.RefillCost = 100 -- If it is missing half of it capacity, this amount will be divided in half, and so on.
 
 -- Fuel decor - No need to change this, just leave it.
 Config.FuelDecor = "_FUEL_LEVEL"
@@ -15,7 +15,7 @@ Config.ShowNearestGasStationOnly = true
 Config.ShowAllGasStations = false
 
 -- Modify the fuel-cost here, using a multiplier value. Setting the value to 2.0 would cause a doubled increase.
-Config.CostMultiplier = 1.0
+Config.CostMultiplier = 1.8
 
 -- Configure the strings as you wish here.
 Config.Strings = {
