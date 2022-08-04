@@ -201,7 +201,15 @@ QBShared.Jobs = {
                 name = 'Judge',
                 payment = 100
             },
-        },
+						['1'] = {
+                name = 'Associate Justice',
+                payment = 100
+            },
+						['2'] = {
+                name = 'Chief Justice',
+								isboss = true,
+								payment = 100
+            },
 	},
 	['lawyer'] = {
 		label = 'Law Firm',
@@ -343,6 +351,35 @@ QBShared.Jobs = {
                 name = 'Corporate',
 								isbos = true,
                 payment = 50
+            },
+        },
+	},
+	['prisonguard'] = {
+		label = 'Dept. of Corrections',
+        type = "guard",
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Officer',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Sergeant',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Lieutenant',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Chief',
+				isboss = true,
+                payment = 150
             },
         },
 	},
