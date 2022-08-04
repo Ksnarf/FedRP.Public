@@ -14,7 +14,7 @@ QBShared.Jobs = {
 	},
 	['police'] = {
 		label = 'Law Enforcement',
-        type = "leo",
+    type = "leo",
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
@@ -22,21 +22,21 @@ QBShared.Jobs = {
                 name = 'Recruit',
                 payment = 50
             },
-			['1'] = {
+		 				['1'] = {
                 name = 'Officer',
                 payment = 75
             },
-			['2'] = {
+						['2'] = {
                 name = 'Sergeant',
                 payment = 100
             },
-			['3'] = {
+						['3'] = {
                 name = 'Lieutenant',
                 payment = 125
             },
-			['4'] = {
+						['4'] = {
                 name = 'Chief',
-				isboss = true,
+								isboss = true,
                 payment = 150
             },
         },
@@ -325,7 +325,7 @@ QBShared.Jobs = {
             },
 						['3'] = {
                 name = 'boss',
-								isbos = true,
+								isboss = true,
                 payment = 50
             },
         },
