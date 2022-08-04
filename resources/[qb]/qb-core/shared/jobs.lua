@@ -50,19 +50,19 @@ QBShared.Jobs = {
                 name = 'Recruit',
                 payment = 50
             },
-			['1'] = {
+						['1'] = {
                 name = 'Paramedic',
                 payment = 75
             },
-			['2'] = {
+						['2'] = {
                 name = 'Doctor',
                 payment = 100
             },
-			['3'] = {
+						['3'] = {
                 name = 'Surgeon',
                 payment = 125
             },
-			['4'] = {
+						['4'] = {
                 name = 'Chief',
 				isboss = true,
                 payment = 150
@@ -78,19 +78,19 @@ QBShared.Jobs = {
                 name = 'Recruit',
                 payment = 50
             },
-			['1'] = {
+						['1'] = {
                 name = 'House Sales',
                 payment = 75
             },
-			['2'] = {
+						['2'] = {
                 name = 'Business Sales',
                 payment = 100
             },
-			['3'] = {
+						['3'] = {
                 name = 'Broker',
                 payment = 125
             },
-			['4'] = {
+						['4'] = {
                 name = 'Manager',
 				isboss = true,
                 payment = 150
@@ -106,19 +106,19 @@ QBShared.Jobs = {
                 name = 'Recruit',
                 payment = 50
             },
-			['1'] = {
+						['1'] = {
                 name = 'Driver',
                 payment = 75
             },
-			['2'] = {
+						['2'] = {
                 name = 'Event Driver',
                 payment = 100
             },
-			['3'] = {
+						['3'] = {
                 name = 'Sales',
                 payment = 125
             },
-			['4'] = {
+						['4'] = {
                 name = 'Manager',
 				isboss = true,
                 payment = 150
@@ -145,19 +145,19 @@ QBShared.Jobs = {
                 name = 'Recruit',
                 payment = 50
             },
-			['1'] = {
+						['1'] = {
                 name = 'Showroom Sales',
                 payment = 75
             },
-			['2'] = {
+						['2'] = {
                 name = 'Business Sales',
                 payment = 100
             },
-			['3'] = {
+						['3'] = {
                 name = 'Finance',
                 payment = 125
             },
-			['4'] = {
+						['4'] = {
                 name = 'Manager',
 				isboss = true,
                 payment = 150
@@ -173,19 +173,19 @@ QBShared.Jobs = {
                 name = 'Recruit',
                 payment = 50
             },
-			['1'] = {
+						['1'] = {
                 name = 'Novice',
                 payment = 75
             },
-			['2'] = {
+						['2'] = {
                 name = 'Experienced',
                 payment = 100
             },
-			['3'] = {
+						['3'] = {
                 name = 'Advanced',
                 payment = 125
             },
-			['4'] = {
+						['4'] = {
                 name = 'Manager',
 								isboss = true,
                 payment = 150
@@ -356,7 +356,7 @@ QBShared.Jobs = {
 	},
 	['prisonguard'] = {
 		label = 'Dept. of Corrections',
-        type = "guard",
+    type = "pguard",
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
@@ -383,5 +383,35 @@ QBShared.Jobs = {
             },
         },
 	},
+	['FirarmATobacco'] = {
+		label = 'Firearm Alchohol & Tobacco',
+		type = "fat",
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+						['0'] = {
+								name = 'Recruit',
+								payment = 50
+						},
+					['1'] = {
+								name = 'Officer',
+								payment = 75
+						},
+						['2'] = {
+								name = 'Sergeant',
+								payment = 100
+						},
+						['3'] = {
+								name = 'Lieutenant',
+								payment = 125
+						},
+						['4'] = {
+								name = 'Chief',
+								isboss = true,
+								payment = 150
+						},
+				},
+	},
+
 
 }
