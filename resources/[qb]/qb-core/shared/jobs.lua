@@ -8,36 +8,51 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Freelancer',
-                payment = 10
+                payment = 25
             },
         },
 	},
 	['police'] = {
 		label = 'Law Enforcement',
-    type = "leo",
-		defaultDuty = true,
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
-            },
-		 				['1'] = {
-                name = 'Officer',
-                payment = 75
-            },
-						['2'] = {
-                name = 'Sergeant',
+                name = 'Cadet',
                 payment = 100
             },
-						['3'] = {
-                name = 'Lieutenant',
+			['1'] = {
+                name = 'Police Officer',
                 payment = 125
             },
-						['4'] = {
-                name = 'Chief',
-								isboss = true,
+			['2'] = {
+                name = 'Senior Police Officer',
                 payment = 150
+            },
+			['3'] = {
+                name = 'Corporal',
+                payment = 175
+            },
+			['4'] = {
+								name = 'Sergeant',
+								payment = 250
+						},
+			['5'] = {
+								name = 'Lieutenant',
+								payment = 350
+   					},
+			['6'] = {
+								name = 'Captain',
+								payment = 500
+  					},
+			['7'] = {
+								name = 'Deputy Chief',
+								payment = 750
+						},
+			['8'] = {
+                name = 'Chief of Police',
+				isboss = true,
+                payment = 1000
             },
         },
 	},
@@ -47,26 +62,30 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
+                name = 'Medical Student',
                 payment = 50
             },
 			['1'] = {
-                name = 'Paramedic',
+                name = 'EMT',
                 payment = 75
             },
 			['2'] = {
-                name = 'Doctor',
+                name = 'Paramedic',
                 payment = 100
             },
 			['3'] = {
-                name = 'Surgeon',
+                name = 'PA',
                 payment = 125
             },
 			['4'] = {
-                name = 'Chief',
-				isboss = true,
+                name = 'Doctor',
                 payment = 150
             },
+			['5'] = {
+								name = 'Medical Chief',
+								isboss = true,
+								payment = 150
+									},
         },
 	},
 	['realestate'] = {
@@ -74,53 +93,41 @@ QBShared.Jobs = {
 		defaultDuty = true,
 		offDutyPay = false,
 		grades = {
-            ['0'] = {
+      ['0'] = {
                 name = 'Recruit',
-                payment = 50
+                payment = 35
             },
 			['1'] = {
-                name = 'House Sales',
-                payment = 75
+                name = 'Salesperson',
+                payment = 50
             },
 			['2'] = {
-                name = 'Business Sales',
-                payment = 100
-            },
-			['3'] = {
-                name = 'Broker',
-                payment = 125
-            },
-			['4'] = {
                 name = 'Manager',
-				isboss = true,
-                payment = 150
+								isboss = true,
+                payment = 125
             },
         },
 	},
 	['taxi'] = {
 		label = 'Taxi',
 		defaultDuty = true,
-		offDutyPay = false,
+		offDutyPay = true,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = '1st year',
+                payment = 25
             },
 			['1'] = {
-                name = 'Driver',
-                payment = 75
+                name = 'Limo Driver',
+                payment = 40
             },
 			['2'] = {
-                name = 'Event Driver',
+                name = 'Executive Driver',
                 payment = 100
-            },
-			['3'] = {
-                name = 'Sales',
-                payment = 125
             },
 			['4'] = {
                 name = 'Manager',
-				isboss = true,
+								isboss = true,
                 payment = 150
             },
         },
@@ -187,7 +194,7 @@ QBShared.Jobs = {
             },
 			['4'] = {
                 name = 'Manager',
-								isboss = true,
+				isboss = true,
                 payment = 150
             },
         },
@@ -201,15 +208,7 @@ QBShared.Jobs = {
                 name = 'Judge',
                 payment = 100
             },
-						['1'] = {
-                name = 'Associate Justice',
-                payment = 100
-            },
-						['2'] = {
-                name = 'Chief Justice',
-								isboss = true,
-								payment = 100
-            },
+        },
 	},
 	['lawyer'] = {
 		label = 'Law Firm',
@@ -217,24 +216,7 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Paralegal',
-                payment = 50
-            },
-						['1'] = {
-                name = 'Jr. Associate',
-                payment = 50
-            },
-						['2'] = {
                 name = 'Associate',
-                payment = 50
-            },
-						['3'] = {
-                name = 'Sr. Associate',
-                payment = 50
-            },
-						['4'] = {
-                name = 'Partner',
-								isboss = true,
                 payment = 50
             },
         },
@@ -305,83 +287,4 @@ QBShared.Jobs = {
             },
         },
 	},
-	-- Addon Jobs (FedRP)
-	['PI'] = {
-		label = 'Investigator',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Office Worker',
-                payment = 50
-            },
-						['1'] = {
-                name = 'Investigator',
-                payment = 50
-            },
-						['2'] = {
-                name = 'Sr. Investigator',
-                payment = 50
-            },
-						['3'] = {
-                name = 'boss',
-								isboss = true,
-                payment = 50
-            },
-        },
-	},
-	['Uber'] = {
-		label = 'Uber',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = '1 Star Driver',
-                payment = 50
-            },
-						['1'] = {
-                name = '3 Star Driver',
-                payment = 50
-            },
-						['2'] = {
-                name = '5 Star Driver',
-                payment = 50
-            },
-						['3'] = {
-                name = 'Corporate',
-								isbos = true,
-                payment = 50
-            },
-        },
-	},
-	['prisonguard'] = {
-		label = 'Dept. of Corrections',
-        type = "guard",
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 50
-            },
-			['1'] = {
-                name = 'Officer',
-                payment = 75
-            },
-			['2'] = {
-                name = 'Sergeant',
-                payment = 100
-            },
-			['3'] = {
-                name = 'Lieutenant',
-                payment = 125
-            },
-			['4'] = {
-                name = 'Chief',
-				isboss = true,
-                payment = 150
-            },
-        },
-	},
-
 }
