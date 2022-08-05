@@ -1,7 +1,0 @@
-fx_version 'cerulean'
-game 'gta5'
-author 'Ksnarf'
-description 'Test Hydrant'
-version '0.0.1'
-lua54 'yes'
-this_is_a_map 'yes'
