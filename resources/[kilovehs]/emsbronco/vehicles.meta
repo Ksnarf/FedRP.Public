@@ -5,10 +5,10 @@
   <residentAnims />
   <InitDatas>
   <Item>
-      <modelName>leobronco</modelName>
-      <txdName>leobronco</txdName>
+      <modelName>emsbronco</modelName>
+      <txdName>emsbronco</txdName>
       <handlingId>MESA</handlingId>
-      <gameName>leobronco</gameName>
+      <gameName>emsbronco</gameName>
       <vehicleMakeName>CANIS</vehicleMakeName>
       <expressionDictName>null</expressionDictName>
       <expressionName>null</expressionName>
@@ -70,11 +70,11 @@
       <steerWheelMult value="1.000000" />
       <HDTextureDist value="5.000000" />
       <lodDistances content="float_array">
-        300.000000	
-        25.000000	
-        70.000000	
-        140.000000	
-        500.000000	
+        300.000000
+        25.000000
+        70.000000
+        140.000000
+        500.000000
         500.000000
       </lodDistances>
       <minSeatHeight value="0.846" />
@@ -119,11 +119,11 @@
         <Item>VAN_SPEEDO_FRONT_RIGHT</Item>
       </firstPersonDrivebyData>
     </Item>
-	
+
 
   </InitDatas>
   <txdRelationships>
 
-	
+
   </txdRelationships>
 </CVehicleModelInfo__InitDataList>

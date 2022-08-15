@@ -3,7 +3,7 @@
 <CVehicleModelInfoVariation>
   <variationData>
    <Item>
-      <modelName>leobronco</modelName>
+      <modelName>emsbronco</modelName>
       <colors>
         <Item>
           <indices content="char_array">
@@ -40,6 +40,6 @@
       </plateProbabilities>
       <lightSettings value="1" />
       <sirenSettings value="900" />
-   </Item>  
+   </Item>
   </variationData>
 </CVehicleModelInfoVariation>
